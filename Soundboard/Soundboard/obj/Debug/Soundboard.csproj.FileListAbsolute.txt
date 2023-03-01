@@ -1,0 +1,111 @@
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\Soundboard.exe.config
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\Soundboard.exe
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\Soundboard.pdb
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.csprojAssemblyReference.cache
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.Form1.resources
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.Properties.Resources.resources
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.csproj.GenerateResource.cache
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.exe
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.pdb
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.Form2.resources
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\Interop.WMPLib.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\AxInterop.WMPLib.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\obj\Debug\Interop.WMPLib.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\obj\Debug\AxInterop.WMPLib.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.csproj.ResolveComReference.cache
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\NAudio.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\NAudio.xml
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.csproj.CopyComplete
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.HELP.resources
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\AudioSwitcher.AudioApi.CoreAudio.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\AudioSwitcher.AudioApi.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\obj\Debug\Spectrum.baml
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\obj\Debug\Spectrum.g.cs
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard_Content.g.cs
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard_MarkupCompile.cache
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.g.resources
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.AboutBox1.resources
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.HelpMain.resources
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.SplashScreen.resources
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\System.Data.Common.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\System.Diagnostics.StackTrace.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\System.Diagnostics.Tracing.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\System.Globalization.Extensions.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\System.IO.Compression.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\System.Net.Http.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\System.Net.Sockets.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\System.Runtime.Serialization.Primitives.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\System.Security.Cryptography.Algorithms.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\System.Security.SecureString.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\System.Threading.Overlapped.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\System.Xml.XPath.XDocument.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\runtime.osx.10.10-x64.CoreCompat.System.Drawing.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\ScottPlot.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\System.Drawing.Common.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.exe.config
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\Accord.dll.config
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\Accord.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\Accord.Math.Core.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\Accord.Math.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\ScottPlot.WinForms.dll
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\Accord.xml
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\Accord.Math.xml
+D:\clarence's stuff\C# projects\Soundboard\Soundboard\bin\Debug\Accord.Math.Core.xml
+D:\C# projects\Soundboard\Soundboard\bin\Debug\Accord.dll.config
+D:\C# projects\Soundboard\Soundboard\bin\Debug\Soundboard.exe.config
+D:\C# projects\Soundboard\Soundboard\bin\Debug\Soundboard.exe
+D:\C# projects\Soundboard\Soundboard\bin\Debug\Soundboard.pdb
+D:\C# projects\Soundboard\Soundboard\bin\Debug\Accord.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\Accord.Math.Core.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\Accord.Math.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\AudioSwitcher.AudioApi.CoreAudio.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\AudioSwitcher.AudioApi.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\NAudio.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\runtime.osx.10.10-x64.CoreCompat.System.Drawing.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\ScottPlot.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\ScottPlot.WinForms.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\System.Drawing.Common.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\Accord.xml
+D:\C# projects\Soundboard\Soundboard\bin\Debug\Accord.Math.xml
+D:\C# projects\Soundboard\Soundboard\bin\Debug\Accord.Math.Core.xml
+D:\C# projects\Soundboard\Soundboard\bin\Debug\NAudio.xml
+D:\C# projects\Soundboard\Soundboard\bin\Debug\Interop.WMPLib.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\AxInterop.WMPLib.dll
+D:\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.csprojAssemblyReference.cache
+D:\C# projects\Soundboard\Soundboard\obj\Debug\Interop.WMPLib.dll
+D:\C# projects\Soundboard\Soundboard\obj\Debug\AxInterop.WMPLib.dll
+D:\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.csproj.ResolveComReference.cache
+D:\C# projects\Soundboard\Soundboard\obj\Debug\Spectrum.baml
+D:\C# projects\Soundboard\Soundboard\obj\Debug\Spectrum.g.cs
+D:\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard_Content.g.cs
+D:\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard_MarkupCompile.cache
+D:\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.g.resources
+D:\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.AboutBox1.resources
+D:\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.Form1.resources
+D:\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.Form2.resources
+D:\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.HELP.resources
+D:\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.HelpMain.resources
+D:\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.Properties.Resources.resources
+D:\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.SplashScreen.resources
+D:\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.csproj.GenerateResource.cache
+D:\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.csproj.CopyComplete
+D:\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.exe
+D:\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.pdb
+D:\C# projects\Soundboard\Soundboard\bin\Debug\FftSharp.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\Microsoft.Win32.Registry.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\NAudio.Asio.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\NAudio.Core.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\NAudio.Midi.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\NAudio.Wasapi.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\NAudio.WinForms.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\NAudio.WinMM.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\System.Security.AccessControl.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\System.Security.Principal.Windows.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\VPKSoft.AudioVisualization.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\VPKSoft.DropOutStack.dll
+D:\C# projects\Soundboard\Soundboard\bin\Debug\Microsoft.Win32.Registry.xml
+D:\C# projects\Soundboard\Soundboard\bin\Debug\System.Security.AccessControl.xml
+D:\C# projects\Soundboard\Soundboard\bin\Debug\System.Security.Principal.Windows.xml
+D:\C# projects\Soundboard\Soundboard\bin\Debug\VPKSoft.AudioVisualization.xml
+D:\C# projects\Soundboard\Soundboard\bin\Debug\VPKSoft.DropOutStack.xml
+D:\C# projects\Soundboard\Soundboard\obj\Debug\Soundboard.csproj.Fody.CopyLocal.cache

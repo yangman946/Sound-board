@@ -1,0 +1,603 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VPKSoft.AudioVisualization</name>
+    </assembly>
+    <members>
+        <member name="T:VPKSoft.AudioVisualization.AudioVisualizationBars">
+            <summary>
+            A control to visualize audio as a bars.
+            Implements the <see cref="T:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase" />
+            </summary>
+            <seealso cref="T:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase" />
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.AudioVisualizationBars.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VPKSoft.AudioVisualization.AudioVisualizationBars"/> class.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.AudioVisualizationBars.DisplayHertzLabels">
+            <summary>
+            Gets or sets a value indicating whether to display the hertz labels.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.AudioVisualizationBars.CombineChannels">
+            <summary>
+            Gets or set a value whether to display the left and right channels as combined.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.AudioVisualizationBars.HertzSpan">
+            <summary>
+            Gets or sets the width of the graph bars in hertz.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.AudioVisualizationBars.DrawWithGradient">
+            <summary>
+            Gets or sets a value indicating whether to draw the bars using gradient color.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.AudioVisualizationBars.ColorGradientLeftStart">
+            <summary>
+            Gets or sets the left channel gradient starting color.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.AudioVisualizationBars.ColorGradientLeftEnd">
+            <summary>
+            Gets or sets the left channel gradient ending color.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.AudioVisualizationBars.ColorGradientRightStart">
+            <summary>
+            Gets or sets the right channel gradient starting color.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.AudioVisualizationBars.ColorGradientRightEnd">
+            <summary>
+            Gets or sets the right channel gradient ending color.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.AudioVisualizationBars.RelativeView">
+            <summary>
+            Gets or sets the value whether the some types of graphs (i. e. bar graph) are drawn relative to minimum and maximum value of the audio peak range.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.AudioVisualizationBars.RelativeViewTimeAdjust">
+            <summary>
+            Gets or sets the adjustment on the volume multipliers in case the <see cref="P:VPKSoft.AudioVisualization.AudioVisualizationBars.RelativeView"/> is set.
+            Set this value to 1 to disable the feature.
+            </summary>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.AudioVisualizationBars.CreateBrush(System.Boolean,System.Int32)">
+            <summary>
+            Creates a brush based on the given parameters.
+            </summary>
+            <param name="left">if set to <c>true</c> the left channel's brush is requested.</param>
+            <param name="height">The height of the draw area.</param>
+            <returns>A <see cref="T:System.Drawing.Brush"/> instance based on the given parameters.</returns>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.AudioVisualizationBars.DrawBars(System.Boolean,System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Draws the bars audio visualization bars.
+            </summary>
+            <param name="left">if set to <c>true</c> the left channel bars are drawn.</param>
+            <param name="e">The <see cref="T:System.Windows.Forms.PaintEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="F:VPKSoft.AudioVisualization.AudioVisualizationBars.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.AudioVisualizationBars.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.AudioVisualizationBars.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VPKSoft.AudioVisualization.AudioVisualizationPlot">
+            <summary>
+            A control to visualize audio as a curve.
+            Implements the <see cref="T:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase" />
+            </summary>
+            <seealso cref="T:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase" />
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.AudioVisualizationPlot.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VPKSoft.AudioVisualization.AudioVisualizationPlot"/> class.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.AudioVisualizationPlot.DisplayHertzLabels">
+            <summary>
+            Gets or sets a value indicating whether to display the hertz labels.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.AudioVisualizationPlot.UseAntiAliasing">
+            <summary>
+            Gets or sets a value whether to use anti-aliasing with the curve drawing.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.AudioVisualizationPlot.LineDrawMode">
+            <summary>
+            Gets or sets the line draw mode of a line type graph.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.AudioVisualizationPlot.LineCurveTension">
+            <summary>
+            Gets or sets the value that specifies the tension of the curve.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.AudioVisualizationPlot.CombineChannels">
+            <summary>
+            Gets or set a value whether to display the left and right channels as combined.
+            </summary>
+        </member>
+        <member name="F:VPKSoft.AudioVisualization.AudioVisualizationPlot.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.AudioVisualizationPlot.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.AudioVisualizationPlot.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase">
+            <summary>
+            A base class for the audio visualization controls.
+            Implements the <see cref="T:System.Windows.Forms.UserControl" />
+            </summary>
+            <seealso cref="T:System.Windows.Forms.UserControl" />
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase"/> class.
+            </summary>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.CalculateHertzLabelHeight(System.IntPtr,System.Drawing.Font)">
+            <summary>
+            Calculates the height of the hertz label panel.
+            </summary>
+            <param name="handle">The handle to a control to measure the text size from.</param>
+            <param name="font">The font to be used to measure the text size.</param>
+            <returns>True if the <see cref="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.HertzLabelsHeight"/> property value was changed.</returns>
+        </member>
+        <member name="F:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.MeasureHertzLabelString">
+            <summary>
+            A string to measure the height of the hertz label panel.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.HertzLabelsHeight">
+            <summary>
+            Gets or sets the height of the hertz label panel.
+            </summary>
+        </member>
+        <member name="F:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.relativeViewTimeAdjust">
+            <summary>
+            Gets or sets the adjustment on the volume multipliers in case the <see cref="P:VPKSoft.AudioVisualization.AudioVisualizationBars.RelativeView"/> is set.
+            Set this value to 1 to disable the feature.
+            </summary>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.AudioVisualizationBase_PropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Handles the PropertyChanged event of the AudioVisualizationBase control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="F:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.ShouldResizeChildren">
+            <summary>
+            Occurs when the font has changed and the <see cref="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.HertzLabelsHeight"/> property value changed.
+            </summary>
+        </member>
+        <member name="E:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.AudioVisualizationBase_Disposed(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Disposed event of the AudioVisualizationBase control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.MmDevices">
+            <summary>
+            Gets the list of MM devices to be used with the <see cref="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.ListenMmDevice"/> property.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.ListenMmDevice">
+            <summary>
+            Gets or sets the MM device to use for audio visualization.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.ExceptionLogAction">
+            <summary>
+            Gets or sets the action to be used to log an exception.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.DataPcmLeft">
+            <summary>
+            Gets or sets the PCM (Pulse Code Modulation) data recorded from the <see cref="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.DataAvailable(System.Object,NAudio.Wave.WaveInEventArgs)"/> event (Left channel stereo).
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.DataFftLeft">
+            <summary>
+            Gets or sets the FFT data (the audio encoded with Fast Fourier Transformation, Left channel stereo).
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.DataPcmRight">
+            <summary>
+            Gets or sets the PCM (Pulse Code Modulation) data recorded from the <see cref="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.DataAvailable(System.Object,NAudio.Wave.WaveInEventArgs)"/> event (Right channel stereo).
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.DataFftRight">
+            <summary>
+            Gets or sets the FFT data (the audio encoded with Fast Fourier Transformation, Right channel stereo).
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.BytesPerSample">
+            <summary>
+            Gets the value of how many bytes per sample the WASAPI capture has.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.PointSpacingHz">
+            <summary>
+            Gets the value of how many points is between one hertz of the FTT (Fast Fourier Transform Data).
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.SampleRate">
+            <summary>
+            Gets the sample rate of the <see cref="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.WasapiLoopbackCapture"/> device.
+            </summary>
+            <value>The sample rate.</value>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.ValidData">
+            <summary>
+            Gets a value indicating whether there is valid FFT data (the audio encoded with Fast Fourier Transformation) available for rendering.
+            </summary>
+            <value><c>true</c> if [there is valid FFT data (the audio encoded with Fast Fourier Transformation) available for rendering; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.Start">
+            <summary>
+            Starts the WASAPI loop capture and the timer.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.BackColor">
+            <summary>
+            Gets or sets the background color for the control.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.ColorHertzLabels">
+            <summary>
+            Gets or sets the color of the hertz labels.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.ColorAudioChannelLeft">
+            <summary>
+            Gets or sets the color of the left audio channel visualization.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.ColorAudioChannelRight">
+            <summary>
+            Gets or sets the color of the left audio channel visualization.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.RefreshRate">
+            <summary>
+            Gets or sets the refresh rate for the audio visualization.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.MinorityCropPercentage">
+            <summary>
+            Gets or sets the minority crop percentage.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.MinorityPercentageStepping">
+            <summary>
+            Gets or sets the minority percentage stepping. I.e. How large the stepping is when cropping the data. <seealso cref="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.MinorityCropPercentage"/>
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.MinorityCropOnBarLevel">
+            <summary>
+            Gets or sets a value indicating whether the minority cropping should applied on a bar graph after the bar values are calculated.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.FftWindowType">
+            <summary>
+            "Gets or sets the FFT window type applied to the signal.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.NoiseTolerance">
+            <summary>
+            Gets the audio intensity which is considered as noise and is not visualized.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.IsStarted">
+            <summary>
+            Gets a value indicating whether the MM audio device listening is started.
+            </summary>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.Stop">
+            <summary>
+            Stops the WASAPI loop capture and the timer.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.Channels">
+            <summary>
+            Gets the amount of channels in a <see cref="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.WasapiLoopbackCapture"/>.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.BitsPerSample">
+            <summary>
+            Gets the number of bits per sample (usually 16 or 32, sometimes 24 or 8).
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.IsMonoAudio">
+            <summary>
+            Gets a value indicating whether the audio is in mono format.
+            </summary>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.DataAvailable(System.Object,NAudio.Wave.WaveInEventArgs)">
+            <summary>
+            Occurs when there is data available in the <see cref="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.WasapiLoopbackCapture"/> class instance when its recording.
+            </summary>
+            <param name="sender">The sender of the event.</param>
+            <param name="e">The <see cref="T:NAudio.Wave.WaveInEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.GetSample(System.Byte[],System.Int32)">
+            <summary>
+            Gets a sample as PCM (Pulse Code Modulation) form a byte array based on the value of the <see cref="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.BitsPerSample"/>.
+            </summary>
+            <param name="buffer">The buffer to use to get the sample from.</param>
+            <param name="offset">The offset within the byte array.</param>
+            <returns>A <c>double</c> value converted from the buffer if successful; otherwise 0.</returns>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.CustomWindowFunc">
+            <summary>
+            Gets or sets the custom FFT window function. <seealso cref="F:VPKSoft.AudioVisualization.WindowType.Custom"/>.
+            </summary>
+            <value>The custom window function.</value>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.PmcAction">
+            <summary>
+            Gets or sets the PMC (Pulse Code Modulation) action for the left and for the right audio channel.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.FftAfterAction">
+            <summary>
+            Gets or sets the action to performed for the audio data after the FFT windowing.
+            </summary>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.UpdateFft">
+            <summary>
+            Updates the Fast Fourier Transformation arrays from the <see cref="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.DataPcmLeft"/> and the <see cref="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.DataFftRight"/> properties.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.MaxHertz">
+            <summary>
+            Gets the maximum hertz value of the FFT (Fast Fourier Transformation) data.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.Cropped">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.CropFftWithMinorityPercentage"/> has already called on the FFT (Fast Fourier Transformation) data.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.IsBarVisualization">
+            <summary>
+            Gets a value indicating whether this instance is of type of <see cref="T:VPKSoft.AudioVisualization.AudioVisualizationBars"/>.
+            </summary>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.CropFftWithMinorityPercentage">
+            <summary>
+            Crops the FFT (Fast Fourier Transformation) data from the highest peak values with a given minority percentage value.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.DataFftMax">
+            <summary>
+            Gets the FFT data maximum intensity.
+            </summary>
+            <value>The data FFT data maximum intensity.</value>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.GetPoints(System.Boolean,System.Double,System.Double)">
+            <summary>
+            Gets the FFT (Fast Fourier Transformation) data as a list of points.
+            </summary>
+            <param name="left">A value indicating whether to use the left or the right channel.</param>
+            <param name="width">The width to adjust the point to.</param>
+            <param name="height">The height to adjust the point to.</param>
+            <returns>A list of points representing the FFT (Fast Fourier Transformation) data.</returns>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.GetPointsWeighted(System.Boolean,System.Double,System.Double)">
+            <summary>
+            Gets the FFT (Fast Fourier Transformation) data as a list of points weighted with the point amount.
+            </summary>
+            <param name="left">A value indicating whether to use the left or the right channel.</param>
+            <param name="width">The width to adjust the point to.</param>
+            <param name="height">The height to adjust the point to.</param>
+            <returns>A list of points representing the FFT (Fast Fourier Transformation) data.</returns>
+        </member>
+        <member name="T:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.OnDataCalculated">
+            <summary>
+            A delegate for the <see cref="E:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.DataCalculated"/> event.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The data calculated event arguments.</param>
+        </member>
+        <member name="E:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.DataCalculated">
+            <summary>
+            Occurs when the audio data is calculated and visualized.
+            </summary>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.RaiseDataCalculatedEvent(System.Object,VPKSoft.AudioVisualization.CommonClasses.DataCalculatedEventArgs)">
+            <summary>
+            Raises the data calculated event.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:VPKSoft.AudioVisualization.CommonClasses.DataCalculatedEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.DisplayHertzLabels">
+            <summary>
+            Gets or sets a value indicating whether to display the hertz labels.
+            </summary>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.GetPeakFrequency(System.Double)">
+            <summary>
+            Gets the peak frequency of the current FTT (Fast Fourier Transform Data).
+            </summary>
+            <param name="ignoreBelowHz">A value of which below the frequency should be ignored in hertz.</param>
+            <returns>The peak frequency in hertz.</returns>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.PaintHertzLabels(System.Windows.Forms.Panel,System.Windows.Forms.PaintEventArgs,System.Int32,System.Int32)">
+            <summary>
+            Paints the hertz labels to a given <see cref="T:System.Windows.Forms.Panel"/> instance.
+            </summary>
+            <param name="panel">The panel to paint the hertz labels into.</param>
+            <param name="e">The <see cref="T:System.Windows.Forms.PaintEventArgs"/> instance containing the paint event data.</param>
+            <param name="left">The left-most position where to center the first label.</param>
+            <param name="right">The right-most position where to center the last label.</param>
+        </member>
+        <member name="T:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.SpanMultiplierData">
+            <summary>
+            A class to store volume channel multiplier data on the <see cref="P:VPKSoft.AudioVisualization.AudioVisualizationBars.RelativeView"/> mode.
+            </summary>
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.SpanMultiplierData.SpanMultiplier">
+            <summary>
+            Gets or sets the span multiplier.
+            </summary>
+            <value>The span multiplier.</value>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.ResetRelativeView">
+            <summary>
+            Resets the relative view in case the <see cref="P:VPKSoft.AudioVisualization.AudioVisualizationBars.RelativeView"/> property is set. This is good to call when the playing song has been changed.
+            </summary>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.ApplySpanMultiplier(System.Collections.Generic.List{System.Double},System.Boolean)">
+            <summary>
+            Applies the span multiplier in case the <see cref="P:VPKSoft.AudioVisualization.AudioVisualizationBars.RelativeView"/> is set.
+            </summary>
+            <param name="values">The values to modify with the relative multiplier.</param>
+            <param name="left">A value indicating whether the left channel is in question.</param>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.UpdateSpanMinMax(System.Collections.Generic.IReadOnlyList{System.Double},System.Collections.Generic.IReadOnlyList{System.Double})">
+            <summary>
+            Updates the <see cref="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.SpanMultipliersLeft"/> and <see cref="P:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.SpanMultipliersRight"/> property values in case the <see cref="P:VPKSoft.AudioVisualization.AudioVisualizationBars.RelativeView"/> is set.
+            </summary>
+            <param name="left">The left channel FFT audio data.</param>
+            <param name="right">The right channel FFT audio data.</param>
+        </member>
+        <member name="F:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.LineDrawMode">
+            <summary>
+            The line draw mode of line audio graph.
+            </summary>
+        </member>
+        <member name="F:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.LineDrawMode.Line">
+            <summary>
+            The line draw mode.
+            </summary>
+        </member>
+        <member name="F:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.LineDrawMode.Curve">
+            <summary>
+            The curve draw mode.
+            </summary>
+        </member>
+        <member name="T:VPKSoft.AudioVisualization.CommonClasses.DataCalculatedEventArgs">
+            <summary>
+            Event arguments for the <see cref="E:VPKSoft.AudioVisualization.CommonClasses.BaseClasses.AudioVisualizationBase.DataCalculated"/>
+            Implements the <see cref="T:System.EventArgs" />
+            </summary>
+            <seealso cref="T:System.EventArgs" />
+        </member>
+        <member name="P:VPKSoft.AudioVisualization.CommonClasses.DataCalculatedEventArgs.PeakFrequency">
+            <summary>
+            Gets or sets the peak frequency in hertz.
+            </summary>
+        </member>
+        <member name="T:VPKSoft.AudioVisualization.WindowType">
+            <summary>
+            The FFT window type.
+            </summary>
+        </member>
+        <member name="F:VPKSoft.AudioVisualization.WindowType.None">
+            <summary>
+            No windowing in the FFT.
+            </summary>
+        </member>
+        <member name="F:VPKSoft.AudioVisualization.WindowType.Custom">
+            <summary>
+            The custom window <see cref="T:System.Func`2"/>
+            </summary>
+        </member>
+        <member name="F:VPKSoft.AudioVisualization.WindowType.Hanning">
+            <summary>
+            The Hanning window.
+            </summary>
+        </member>
+        <member name="F:VPKSoft.AudioVisualization.WindowType.Hamming">
+            <summary>
+            The Hamming window.
+            </summary>
+        </member>
+        <member name="F:VPKSoft.AudioVisualization.WindowType.Blackman">
+            <summary>
+            The Blackman window.
+            </summary>
+        </member>
+        <member name="F:VPKSoft.AudioVisualization.WindowType.BlackmanExact">
+            <summary>
+            The Blackman exact window.
+            </summary>
+        </member>
+        <member name="F:VPKSoft.AudioVisualization.WindowType.BlackmanHarris">
+            <summary>
+            The Blackman-Harris window.
+            </summary>
+        </member>
+        <member name="F:VPKSoft.AudioVisualization.WindowType.FlatTop">
+            <summary>
+            The Flattop window.
+            </summary>
+        </member>
+        <member name="F:VPKSoft.AudioVisualization.WindowType.Bartlett">
+            <summary>
+            The Bartlett window.
+            </summary>
+        </member>
+        <member name="F:VPKSoft.AudioVisualization.WindowType.Cosine">
+            <summary>
+            The Cosine window.
+            </summary>
+        </member>
+    </members>
+</doc>
